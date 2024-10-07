@@ -1,0 +1,79 @@
+:root {
+    --bg-color: #f0f4f8;
+    --text-color: #1a1a1a;
+    --card-bg: #ffffff;
+    --list-item-bg: #ffffff;
+    --list-item-color: #2e2e2e;
+    --navbar-bg: #e3e8ec;
+    --navbar-color: #1a1a1a;
+    --footer-text-color: #7d8893;
+}
+
+.dark-mode {
+    --bg-color: #1a1a1a;
+    --text-color: #e5e5e5;
+    --card-bg: #2c2c2c;
+    --list-item-bg: #2c2c2c;
+    --list-item-color: #f0f0f0;
+    --navbar-bg: #1f1f1f;
+    --navbar-color: #e5e5e5;
+    --footer-text-color: #a3a3a3;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.card {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+.list-group-item {
+    background-color: var(--list-item-bg);
+    color: var(--list-item-color);
+}
+
+.navbar {
+    background-color: var(--navbar-bg);
+    display: flex;
+    align-items: center;
+}
+
+.navbar-light .nav-link, .navbar-light .navbar-brand, .navbar-light .navbar-toggler-icon {
+    color: var(--navbar-color);
+}
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+}
+
+.navbar-toggler {
+    border-color: var(--navbar-color);
+}
+
+.navbar-toggler-icon {
+    background-image: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-toggler-icon::after {
+    content: "\F479";
+    font-family: bootstrap-icons !important;
+    font-size: 1.5rem;
+}
+
+#darkModeToggle {
+    background: none;
+    border: none;
+    color: var(--navbar-color);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
